@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ch6
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=str
+comment2.target=java.lang.String\ ppap(java.lang.String)
+comment3.params=str
+comment3.target=boolean\ isPalindrome(java.lang.String)
+comment4.params=num
+comment4.target=java.lang.String\ convertToBinary(int)
+comment5.params=msg
+comment5.target=java.lang.String\ pigLatin(java.lang.String)
+numComments=6
