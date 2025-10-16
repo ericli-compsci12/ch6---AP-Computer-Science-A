@@ -19,9 +19,10 @@ public class Ch6 {
          System.out.println("Binary Number: " + convertToBinary(in.nextInt()));
      }
      else if (input.equals("PigLatinTranslater")) {
-         System.out.print("Enter a word: ");
+         System.out.print("Enter a word or sentence: ");
          System.out.println("The word in pig latin is: " + pigLatin(in.nextLine()));
      }
+     else System.out.println("Oops! An error occured!");
          
     }
     
@@ -71,6 +72,19 @@ public class Ch6 {
     
     //Assignment 4: pigLatin
     public static String pigLatin(String msg) {
-        return msg.substring(1) + msg.charAt(0) + "ay";
+        String rtn = "";
+        
+        while (msg.indexOf(" ") >= 0) {
+           rtn = rtn + fourhelper(msg.substring(0, msg.indexOf(" "))); 
+           msg = msg.substring(msg.indexOf(" ") + 1);
+        }
+        rtn = rtn + fourhelper(msg);
+        
+        return rtn;
+    }
+     
+    public static String fourhelper(String msg) {
+        if (msg.length() == 1) return msg;
+        else return msg.substring(1) + msg.charAt(0) + "ay" + " ";
     }
 }

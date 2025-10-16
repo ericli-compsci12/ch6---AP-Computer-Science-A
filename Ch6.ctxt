@@ -10,4 +10,6 @@ comment4.params=num
 comment4.target=java.lang.String\ convertToBinary(int)
 comment5.params=msg
 comment5.target=java.lang.String\ pigLatin(java.lang.String)
-numComments=6
+comment6.params=msg
+comment6.target=java.lang.String\ fourhelper(java.lang.String)
+numComments=7
